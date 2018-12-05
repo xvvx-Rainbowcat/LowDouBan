@@ -1,0 +1,34 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+        <item name="android:windowLightStatusBar">true</item>
+        <item name="android:windowTranslucentStatus">false</item>
+        <item name="android:windowTranslucentNavigation">false</item>
+        <item name="android:statusBarColor">@android:color/transparent</item>
+        <item name="android:fitsSystemWindows">true</item>
+    </style>
+
+    <style name="MovieTheme" parent="AppTheme">
+        <item name="android:statusBarColor">@color/colorMovie</item>
+    </style>
+
+    <style name="MineTheme" parent="MovieTheme">
+        <item name="android:statusBarColor">@color/colormine</item>
+    </style>
+
+    <style name="RatingBar_custom" parent="Base.Widget.AppCompat.RatingBar.Small">
+        <item name="android:colorControlActivated">@color/colorstar</item>
+    </style>
+
+    <style name="CardRatingBar_custom" parent="Base.Widget.AppCompat.RatingBar">
+        <item name="android:progressDrawable">@drawable/ratingbar_custom</item>
+        <item name="android:maxHeight">10dp</item>
+        <item name="android:minHeight">10dp</item>
+    </style>
+
+</resources>

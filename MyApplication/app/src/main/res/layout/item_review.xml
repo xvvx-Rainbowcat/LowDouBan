@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_marginBottom="16dp"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:textColor="@android:color/black"
+        android:id="@+id/fragment_review_item_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:text="Title"
+        android:textSize="15sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/fragment_review_item_avatar"
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        app:layout_constraintStart_toStartOf="@+id/fragment_review_item_title"
+        app:layout_constraintTop_toBottomOf="@+id/fragment_review_item_title" />
+
+    <TextView
+        android:id="@+id/fragment_review_item_name"
+        android:layout_width="wrap_content"
+        android:layout_height="15dp"
+        android:layout_marginStart="8dp"
+        android:text="TextView"
+        android:textSize="11sp"
+        app:layout_constraintBottom_toBottomOf="@+id/fragment_review_item_avatar"
+        app:layout_constraintStart_toEndOf="@+id/fragment_review_item_avatar"
+        app:layout_constraintTop_toTopOf="@+id/fragment_review_item_avatar" />
+
+    <RatingBar
+        android:id="@+id/fragment_review_item_ratingbar"
+        style="@style/RatingBar_custom"
+        android:theme="@style/RatingBar_custom"
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:layout_marginStart="32dp"
+        android:numStars="5"
+        android:stepSize="1"
+        app:layout_constraintBottom_toBottomOf="@+id/fragment_review_item_name"
+        app:layout_constraintStart_toEndOf="@+id/fragment_review_item_name"
+        app:layout_constraintTop_toTopOf="@+id/fragment_review_item_name" />
+
+</android.support.constraint.ConstraintLayout>

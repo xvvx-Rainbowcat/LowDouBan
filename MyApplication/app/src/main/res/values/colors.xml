@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#008577</color>
+    <color name="colorPrimaryDark">#00574B</color>
+    <color name="colorAccent">#D81B60</color>
+    <color name="colorMovie">#0657b3</color>
+    <color name="colorTransMovie">#b70657b3</color>
+    <color name="colorstar">#93d340</color>
+    <color name="colorSearch">#05ffe5</color>
+    <color name="colorfind">#90000000</color>
+    <color name="colormine">#cfcdaf</color>
+    <color name="colorWhite">#ffffff</color>
+</resources>
